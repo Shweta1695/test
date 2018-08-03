@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:uber="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/linkedin_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1c5199"
+        android:drawableLeft="@drawable/ic_launcher_background"
+        android:gravity="center"
+        android:onClick="signInWithLinkedIn"
+        android:text="@string/sign_in_with_UBER"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+    <!-- image view to show user profile image -->
+    <ImageView
+        android:id="@+id/user_profile_image_view"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <!-- text view to show user details -->
+    <TextView
+        android:id="@+id/user_details_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <!-- logout button only visible after successful Sign In -->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:onClick="doLogout"
+        android:text="@string/logout"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <!-- Open Profile Links buttons to open user profile into LinkedIn App only visible after successful Sign In -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/open_my_profile_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="openMyProfile"
+            android:layout_marginRight="5dp"
+            android:text="@string/open_my_profile"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

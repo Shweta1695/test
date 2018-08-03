@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">testuber</string>
+
+    <string name="sign_in_with_UBER">Sign In with UBER</string>
+    <string name="logout">Logout</string>
+    <string name="open_my_profile">Open My Profile</string>
+
+</resources>
